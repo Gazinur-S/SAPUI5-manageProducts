@@ -18,16 +18,18 @@
 		</semantic:titleHeading>
 
 		<semantic:headerContent>
-			<ObjectNumber
+			<ObjectHeader
+				id="objectHeader"
+				title="{ProductID}"
 				number="{
-					path: 'Price',
-					formatter: '.formatter.numberUnit'
+							path: 'Price',
+							formatter: '.formatter.numberUnit'
 				}"
-				unit="{CurrencyCode}"
+				numberUnit="{CurrencyCode}">
 				<attributes>
 					<ObjectAttribute text="{Name}"/>
 				</attributes>
-			/>
+			</ObjectHeader>
 		</semantic:headerContent>
 
 		<semantic:sendEmailAction>
